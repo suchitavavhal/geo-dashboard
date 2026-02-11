@@ -14,3 +14,30 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Installation
+
+# Clone the repository
+git clone (https://github.com/suchitavavhal/geo-dashboard.git)
+
+# Install dependencies
+npm install
+
+# Generate the mock data (5,000 records)
+npm run seed
+
+## Development
+npm run dev
+
+## Folder Structure
+src/
+├── components/
+│   ├── DataTable.jsx   # Virtualized list logic
+│   ├── MapView.jsx     # Leaflet & Cluster logic
+│   └── ...
+├── data/
+│   └── projects.json   # Generated 5k records
+├── scripts/
+│   └── generateData.js # Node.js ESM seeding script
+├── App.jsx             # State orchestration
+└── App.css             # Flexbox/Dashboard layout
