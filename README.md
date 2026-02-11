@@ -34,7 +34,8 @@ src/
 ├── components/
 │   ├── DataTable.jsx   # Virtualized list logic
 │   ├── MapView.jsx     # Leaflet & Cluster logic
-│   └── ...
+|___hooks/
+| └── useProjectData.js 
 ├── data/
 │   └── projects.json   # Generated 5k records
 ├── scripts/
